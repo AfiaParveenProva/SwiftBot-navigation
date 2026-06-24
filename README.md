@@ -24,14 +24,21 @@ The project was built as part of a university robotics programming assignment, d
 
 ## 🛠️ Technologies Used
 
-Java | Core programming language 
-SwiftBot API | Robot hardware control (motors, camera, underlights, buttons) 
-Raspberry Pi | Hardware platform running the program 
-BufferedReader | Keyboard input handling 
-ArrayList | Command history / retrace memory 
-Java ImageIO | Image capture and saving 
-Java FileWriter | Log file writing 
-Java SimpleDateFormat | Timestamping log entries 
+Java : Core programming language
+
+SwiftBot API : Robot hardware control (motors, camera, underlights, buttons) 
+
+Raspberry Pi : Hardware platform running the program 
+
+BufferedReader : Keyboard input handling 
+
+ArrayList : Command history / retrace memory 
+
+Java ImageIO : Image capture and saving 
+
+Java FileWriter : Log file writing 
+
+Java SimpleDateFormat : Timestamping log entries 
 
 
 ## 🎮 Commands
