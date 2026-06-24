@@ -23,6 +23,7 @@ The project was built as part of a university robotics programming assignment, d
 - 🔘 **Physical button controls** — buttons on the robot trigger additional features
 - ✅ **Input validation** — duration (0–6s) and speed (0–100) are validated before execution
 
+---
 
 ## 🛠️ Technologies Used
 
@@ -42,6 +43,7 @@ Java FileWriter : Log file writing
 
 Java SimpleDateFormat : Timestamping log entries 
 
+---
 
 ## 🎮 Commands
 
@@ -62,6 +64,7 @@ Java SimpleDateFormat : Timestamping log entries
 
 **Example:** `F 3 50` moves the robot forward for 3 seconds at speed 50.
 
+---
 
 ## 🔘 Button Controls
 
@@ -75,6 +78,7 @@ Physical buttons on the SwiftBot trigger additional features without needing a Q
 
 **Y** : Display the total duration the program has been running 
 
+---
 
 ## 💡 Underlight Feedback
 
@@ -90,6 +94,7 @@ The robot's LED underlights change colour to indicate its current state:
 
 🟡 Yellow/Purple : Invalid command received 
 
+---
 
 ## ▶️ How to Run
 
@@ -113,6 +118,7 @@ The robot's LED underlights change colour to indicate its current state:
    ```
 4. Press `8` and hit Enter to begin scanning a QR code.
 
+---
 
 ## 📁 Project Structure
 
@@ -123,6 +129,8 @@ swiftbot-navigation/
 ├── W.txt                  # Generated command log file (created at runtime)
 └── README.md              # Project documentation
 ```
+
+---
 
 ## 👩‍💻 Author
 
