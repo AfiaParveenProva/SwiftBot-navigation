@@ -2,6 +2,7 @@
 
 A Java-based navigation program for a Raspberry Pi-powered SwiftBot robot, where movement commands (forward, backward, left, right, retrace) are executed by scanning QR codes with the robot's camera, with LED underlight feedback, automatic photo capture, and command logging features.
 
+---
 
 ## 📖 About the Project
 
@@ -9,6 +10,7 @@ This program controls a **SwiftBot robot** (named *Poniyo Neer*) running on a **
 
 The project was built as part of a university robotics programming assignment, demonstrating real-time hardware control, image processing, and command logging in Java.
 
+---
 
 ## ✨ Features
 
@@ -43,19 +45,16 @@ Java SimpleDateFormat : Timestamping log entries
 
 ## 🎮 Commands
 
-Commands are encoded into QR codes and scanned by the robot. Press `8` on the keyboard to trigger a scan.
+> Commands are encoded into QR codes and scanned by the robot. Press `8` on the keyboard to trigger a scan.
 
-Forward | `F [duration] [speed]` : Move forward for up to 6 seconds 
-
-Backward | `B [duration] [speed]` : Move backward for up to 6 seconds 
-
-Right | `R [duration] [speed]` : Turn right 90° then move forward 
-
-Left | `L [duration] [speed]` : Turn left 90° then move forward 
-
-Retrace | `T [steps]` : Replay the last N movement commands 
-
-Write Log | `W` : Save timestamped command history to `W.txt` 
+| Command | Syntax | Description |
+|---|---|---|
+| Forward | `F [duration] [speed]` | Move forward for up to 6 seconds |
+| Backward | `B [duration] [speed]` | Move backward for up to 6 seconds |
+| Right | `R [duration] [speed]` | Turn right 90° then move forward |
+| Left | `L [duration] [speed]` | Turn left 90° then move forward |
+| Retrace | `T [steps]` | Replay the last N movement commands |
+| Write Log | `W` | Save timestamped command history to `W.txt` |
 
 **Parameter constraints:**
 - `duration` — in seconds, must be between 0 and 6
