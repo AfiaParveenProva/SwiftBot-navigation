@@ -45,14 +45,17 @@ Java SimpleDateFormat : Timestamping log entries
 
 Commands are encoded into QR codes and scanned by the robot. Press `8` on the keyboard to trigger a scan.
 
-| Command | Format | Description |
+Forward | `F [duration] [speed]` : Move forward for up to 6 seconds 
 
-| Forward | `F [duration] [speed]` | Move forward for up to 6 seconds |
-| Backward | `B [duration] [speed]` | Move backward for up to 6 seconds |
-| Right | `R [duration] [speed]` | Turn right 90° then move forward |
-| Left | `L [duration] [speed]` | Turn left 90° then move forward |
-| Retrace | `T [steps]` | Replay the last N movement commands |
-| Write Log | `W` | Save timestamped command history to `W.txt` |
+Backward | `B [duration] [speed]` : Move backward for up to 6 seconds 
+
+Right | `R [duration] [speed]` : Turn right 90° then move forward 
+
+Left | `L [duration] [speed]` : Turn left 90° then move forward 
+
+Retrace | `T [steps]` : Replay the last N movement commands 
+
+Write Log | `W` : Save timestamped command history to `W.txt` 
 
 **Parameter constraints:**
 - `duration` — in seconds, must be between 0 and 6
@@ -65,21 +68,28 @@ Commands are encoded into QR codes and scanned by the robot. Press `8` on the ke
 
 Physical buttons on the SwiftBot trigger additional features without needing a QR code:
 
-| **A** | Display how many times each command has been executed |
-| **B** | Display the most frequently used command |
-| **X** | Terminate / exit the program |
-| **Y** | Display the total duration the program has been running |
+**A** : Display how many times each command has been executed 
+
+**B** : Display the most frequently used command 
+
+**X** : Terminate / exit the program 
+
+**Y** : Display the total duration the program has been running 
 
 
 ## 💡 Underlight Feedback
 
 The robot's LED underlights change colour to indicate its current state:
 
-| 🔵 Teal Blue | Scanning for a QR code |
-| 🟢 Green | Moving forward or turning |
-| 🔴 Red | Moving backward or turning left |
-| 🟣 Purple/Yellow | Writing log file (W command) |
-| 🟡 Yellow/Purple | Invalid command received |
+🔵 Teal Blue : Scanning for a QR code 
+
+🟢 Green : Moving forward or turning 
+
+🔴 Red : Moving backward or turning left 
+
+🟣 Purple/Yellow : Writing log file (W command) 
+
+🟡 Yellow/Purple : Invalid command received 
 
 
 ## ▶️ How to Run
